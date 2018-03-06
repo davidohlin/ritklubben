@@ -1,2 +1,2 @@
 <?php 
-    bladerunner('views.app');
+    bladerunner('views.layouts.master');

@@ -35,11 +35,10 @@ add_action('after_setup_theme', function () {
 
 // Enqueue and register scripts the right way.
 add_action('wp_enqueue_scripts', function () {
-    // wp_deregister_script('jquery');
-    wp_enqueue_style('main', get_stylesheet_directory_uri() . '/assets/dist/css/main.min.css');
+    wp_enqueue_style('wordplate', mix('styles/main.css'));
 
-    // wp_register_script('wordplate', mix('scripts/app.js'), '', '', true);
-    // wp_enqueue_script('wordplate');
+    wp_register_script('wordplate', mix('scripts/app.js'), '', '', true);
+    wp_enqueue_script('wordplate');
 });
 
 // Remove JPEG compression.

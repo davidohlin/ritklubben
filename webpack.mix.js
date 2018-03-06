@@ -1,5 +1,7 @@
 const mix = require('laravel-mix');
 
+require('dotenv').config();
+
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -11,12 +13,12 @@ const mix = require('laravel-mix');
  |
  */
 
-const theme = 'wordplate';
+const theme = process.env.WP_THEME;
 
 mix.setResourceRoot('../');
 mix.setPublicPath(`public/themes/${theme}/assets`);
 
 mix.js('resources/assets/scripts/app.js', 'scripts');
-mix.sass('resources/assets/styles/app.scss', 'styles');
+mix.sass('resources/assets/styles/main.scss', 'styles');
 
 mix.version();
