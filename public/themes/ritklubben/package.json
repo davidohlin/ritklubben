@@ -103,6 +103,7 @@
     "yargs": "~11.0.0"
   },
   "dependencies": {
+    "instafeed": "^2.0.0",
     "jquery": "^3.3.1"
   }
 }
