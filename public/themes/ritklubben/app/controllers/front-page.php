@@ -35,4 +35,10 @@ class FrontPage extends Controller
         
         return $pages;
     }
+
+    public function posts()
+    {   
+        $posts = get_posts();
+        return $posts;
+    }
 }
