@@ -3,9 +3,12 @@
   @include('partials.head')
   <body>
     @include('partials.header')
+    
     @include('partials.navigation')
-
-    @yield('content')
+    
+    <main>
+    	@yield('content')
+	</main>
 
     @include('partials.footer')
     
