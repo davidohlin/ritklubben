@@ -1,0 +1,23 @@
+.nav {
+
+}
+
+.nav__list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav__item {
+	display: inline-flex;
+}
+
+.nav__link {
+	padding: $space-1 $space-2;
+
+	&:hover {
+		color: white;
+		background: blue;
+		border-radius: 3px;
+	}
+}
