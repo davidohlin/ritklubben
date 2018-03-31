@@ -8,7 +8,7 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/public/themes/ritklubben",
+  "publicPath": "/themes/ritklubben",
   "devUrl": "http://ritklubben.test",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
