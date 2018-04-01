@@ -39,6 +39,17 @@ class FrontPage extends Controller
     public function posts()
     {   
         $posts = get_posts();
-        return $posts;
+
+        $split = array();
+        
+        foreach ($posts as $key => $value) {
+            if ($key % 2 === 0) {
+                $split['even'][] = $value;
+            } else {
+                $split['odd'][] = $value;
+            }
+        }
+        
+        return $split;
     }
 }

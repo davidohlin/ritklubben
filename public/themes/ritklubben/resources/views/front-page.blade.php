@@ -14,12 +14,26 @@
 			</div>
 				{!! get_search_form(false) !!}
 			@endif
-	
-			@foreach ($posts as $post)
-				<div class="col col-12 md-col-6 px2">
+
+			@if(isset($posts['even']))
+			<div class="col col-12 sm-col-6 px3 mt4">
+				@foreach ($posts['even'] as $post)
+				<div class="col col-12 mb3">
 					@include('partials.excerpt')
 				</div>
-			@endforeach
+				@endforeach
+			</div>
+			@endif
+
+			@if(isset($posts['odd']))
+			<div class="col col-12 sm-col-6 px3">
+				@foreach ($posts['odd'] as $post)
+				<div class="col col-12 mb3">
+					@include('partials.excerpt')
+				</div>
+				@endforeach
+			</div>
+			@endif
 		</div>
 	</div>
 </div>
