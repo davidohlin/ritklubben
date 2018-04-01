@@ -1,7 +1,3 @@
-.nav {
-
-}
-
 .nav__list {
 	display: flex;
 	align-items: center;
@@ -14,10 +10,10 @@
 
 .nav__link {
 	padding: $space-1 $space-2;
+	font-weight: $bold-font-weight;
 
 	&:hover {
-		color: white;
-		background: blue;
+		color: $color-secondary;
 		border-radius: 3px;
 	}
 }
