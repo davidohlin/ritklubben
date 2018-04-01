@@ -1,7 +1,7 @@
 <header class="py3">
 	<div class="container mx-auto">
 		<div class="clearfix">
-			<div class="col col-12 px2 center">
+			<div class="col col-12 px3 center">
 				<a href="{{ home_url('/') }}" class="header__logo mx-auto">
 					@include('partials.logo')	
 				</a>

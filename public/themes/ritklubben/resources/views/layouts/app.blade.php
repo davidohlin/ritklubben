@@ -7,8 +7,8 @@
     @include('partials.navigation')
     
     <main>
-    	@yield('content')
-	</main>
+      @yield('content')
+    </main>
 
     @include('partials.footer')
     
