@@ -1,6 +1,10 @@
 .logo {
 	width: 100%;
 	fill: $logo-fill;
+
+	&:hover {
+		fill: $color-secondary;
+	}
 }
 
 .r, .i, .t, .k, .l, .u, .b1, .b2, .e, .n, .idot, .underline  {
