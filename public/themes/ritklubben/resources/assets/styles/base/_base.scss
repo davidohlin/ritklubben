@@ -32,6 +32,12 @@ i, .i { font-style: italic }
 a {
 	text-decoration: none;
 	color: $color-primary;
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: $color-secondary;
+	}
 }
 
 table {
