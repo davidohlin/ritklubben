@@ -1,0 +1,1 @@
+<p class="h6 caps mb3 line-height-1">Av {{ $author }} den {{ $date }}</p>
