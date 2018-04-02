@@ -6,7 +6,9 @@
 		<div class="col col-12 md-col-6 px3 mb3">
 			<h1 class="mb2">{{ $post->post_title }}</h1>
 			@include('partials.author')
-			<p>{{ $post->post_content }}</p>
+			@while(have_posts()) @php(the_post())
+				@include('partials.content-page')
+			@endwhile
 		</div>
 		<div class="col col-12">
 			<div class="offset">
