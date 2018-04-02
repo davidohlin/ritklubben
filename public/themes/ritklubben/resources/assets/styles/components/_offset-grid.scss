@@ -1,0 +1,20 @@
+.offset {
+	display: grid;
+	grid-template-columns: 1fr;
+
+	@media screen and (min-width: $breakpoint-sm) {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.offset__item {
+	margin-bottom: $space-3;
+
+	@media screen and (min-width: $breakpoint-sm) {
+		margin-bottom: 0;
+
+		&:nth-of-type(odd) {
+			padding-top: $space-4;
+		}
+	}
+}
