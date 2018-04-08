@@ -8,7 +8,6 @@ class FrontPage extends Controller
 {
     /*
      * Returns navigation
-     *
      * @return array
      */
     public function navigation()
