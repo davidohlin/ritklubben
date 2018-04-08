@@ -40,7 +40,7 @@ class Dates extends Controller
 		$timezone = new DateTimeZone('Europe/Stockholm');
 		$now = new DateTime('now', $timezone);
 		$now = $now->format('m/d/Y');
-		
+
 		return $now > $date;
 	}
 
@@ -72,7 +72,7 @@ class Dates extends Controller
 		$months = array(
 			'January' => 'Januari', 
 			'February' => 'Februari', 
-			'Mars' => 'Mars', 
+			'March' => 'Mars', 
 			'April' => 'April',
 			'May' => 'Maj',
 			'June' => 'Juni', 
