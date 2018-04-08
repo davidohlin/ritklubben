@@ -128,8 +128,16 @@ add_action('after_setup_theme', function () {
 });
 
 /**
-  * Register ACF Fields
+  * Register ACF Fields and options page
   */
 add_action('after_setup_theme', function () {
     include_once 'acf/acf.php';
+
+    if( function_exists('acf_add_options_page') ) {
+        acf_add_options_page(array(
+            'page_title' => 'Temainställningar',
+            'menu_title' => 'Temainställningar',
+            'menu_slug' => 'theme-settings'
+        ));
+    }
 });

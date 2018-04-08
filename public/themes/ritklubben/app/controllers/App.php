@@ -34,7 +34,6 @@ class App extends Controller
 
     /*
      * Returns navigation
-     *
      * @return array
      */
     public function navigation()
@@ -60,5 +59,17 @@ class App extends Controller
         }
         
         return $pages;
+    }
+
+     /*
+     * Returns footer social settings
+     * @return array
+     */
+    public function social()
+    {
+        $social['instagram'] = get_field('instagram', 'option');
+        $social['facebook'] = get_field('facebook', 'option');
+
+        return $social;
     }
 }

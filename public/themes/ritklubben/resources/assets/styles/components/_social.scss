@@ -1,0 +1,24 @@
+.social__item {
+	display: inline-block;
+	margin-right: $space-1;
+
+	&:last-of-type {
+		margin-right: 0;
+	}
+
+	.instagram-logo,
+	.facebook-logo {
+		fill: $color-primary;
+		width:  1.5rem;
+		height: 1.5rem;
+	}
+
+	&:hover,
+	&:active,
+	&:focus {
+		.instagram-logo,
+		.facebook-logo {
+			fill: $color-secondary;
+		}
+	}
+}

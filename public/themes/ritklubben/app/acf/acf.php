@@ -234,4 +234,76 @@ acf_add_local_field_group(array(
 	'description' => '',
 ));
 
+acf_add_local_field_group(array(
+	'key' => 'group_5aca60fb24290',
+	'title' => 'Sidinställningar',
+	'fields' => array(
+		array(
+			'key' => 'field_5aca61ac5df5f',
+			'label' => 'Sidfot',
+			'name' => '',
+			'type' => 'tab',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'placement' => 'top',
+			'endpoint' => 0,
+		),
+		array(
+			'key' => 'field_5aca62d36bbb0',
+			'label' => 'Facebook',
+			'name' => 'facebook',
+			'type' => 'url',
+			'instructions' => 'URL till Facebooksida',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => 'https://www.facebook.com/ritklubben',
+			'placeholder' => 'T.ex. https://www.facebook.com/ritklubben',
+		),
+		array(
+			'key' => 'field_5aca63416bbb1',
+			'label' => 'Instagram',
+			'name' => 'instagram',
+			'type' => 'url',
+			'instructions' => 'URL till Instagramkonto',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => 'https://instagram.com/ritklubben',
+			'placeholder' => 'T.ex. https://instagram.com/ritklubben',
+		),
+	),
+	'location' => array(
+		array(
+			array(
+				'param' => 'options_page',
+				'operator' => '==',
+				'value' => 'theme-settings',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+	'active' => 1,
+	'description' => '',
+));
+
 endif;
