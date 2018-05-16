@@ -6,7 +6,7 @@
 					@include('partials.heart')
 				</div>
 				<span class="strong">Ritklubben {{ date("Y") }}</span><br>
-				<a class="strong" href="mailto:ritklubben@gmail.com">ritklubben@gmail.com</a>
+				<a class="strong" href="mailto:ritklubb@gmail.com">ritklubb@gmail.com</a>
 				@if (!empty($social))
 				<ul class="social py2">
 					@if (!is_null($social['facebook']))
